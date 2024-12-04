@@ -6,5 +6,7 @@ queue_rules:
     merge_method: squash
     name: default
     queue_conditions:
+      - status-success = Explore-GitHub-Actions
+    merge_conditions:
       - check-success = Explore-GitHub-Actions
     speculative_checks: 3

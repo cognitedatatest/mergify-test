@@ -5,6 +5,6 @@ queue_rules:
   - batch_size: 3
     merge_method: squash
     name: default
-    conditions:
+    queue_conditions:
       - check-success = Explore-GitHub-Actions
     speculative_checks: 3

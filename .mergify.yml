@@ -6,8 +6,6 @@ queue_rules:
     merge_method: squash
     name: default
     queue_conditions:
-      - and:
-        - "#approved-reviews-by >= 1"
-        - status-success = Explore-GitHub-Actions
+      - status-success = Explore-GitHub-Actions
     merge_conditions:
       - check-success = Explore-GitHub-Actions

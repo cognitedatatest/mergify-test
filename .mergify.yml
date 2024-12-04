@@ -1,0 +1,4 @@
+queue_rules:
+  - batch_size: 3
+    merge_method: rebase
+    name: default

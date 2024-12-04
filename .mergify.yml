@@ -1,4 +1,9 @@
+merge_queue:
+  max_parallel_checks: 3
+  
 queue_rules:
   - batch_size: 3
     merge_method: rebase
     name: default
+    merge_conditions:
+      - check-success = Explore-GitHub-Actions
